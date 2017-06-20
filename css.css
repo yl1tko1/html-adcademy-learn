@@ -1,0 +1,259 @@
+@font-face {
+    font-family: PT Sans; /* Имя шрифта */
+    src: url(font/ptsansnarrow.woff); /* Путь к файлу со шрифтом */
+   }
+@font-face {
+    font-family: PT Sans Bold; /* Имя шрифта */
+    src: url(font/ptsansnarrowbold.woff); /* Путь к файлу со шрифтом */
+   }
+body {
+	padding: 0;
+	margin: 0;
+	background: #202020 url(img/bg.png) top center no-repeat;
+	font-family: PT Sans Bold;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+}
+img {
+	margin-bottom: -4px;
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.a-fix {
+	text-decoration: none;
+	border: 0;
+
+}
+.container {
+	width: 940px;
+	padding: 0 20px;
+	margin: 0 auto;
+}
+header {
+	background: #000;
+	padding: 25px 0;
+}
+.main-navigation {
+	width: 720px;
+	float: left;
+}
+
+ul {
+	margin: 0;
+}
+
+.main-navigation ul li {
+	list-style: none;
+	float: left;
+}
+
+.main-navigation ul li a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #FFF;
+	margin-right: 35px;
+	font-size: 16px;
+	font-family: PT Sans Bold;
+}
+
+.user-block {
+	width: 150px;
+	float: right;
+}
+
+.user-block a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #FFF;
+	margin-right: 35px;
+	font-size: 16px;
+	font-family: PT Sans Bold;
+}
+
+.logo {
+	width: 368px;
+	margin: 55px auto 30px;
+	height: 204px;
+}
+.features {
+	margin-bottom: 80px;
+}
+.features-item {
+	width: 300px;
+	float: left;
+	margin-right: 20px;
+	text-align: center;
+}
+.features-item p {
+	font-size: 14px;
+	color: #FFF;
+	text-align: center;
+	text-transform: uppercase;
+}
+.features-item:last-child {
+	margin-right: 0;
+}
+
+.features-name {
+	font-size: 30px;
+	color: #FFF;
+	font-family: PT Sans Bold;
+	text-transform: uppercase;
+}
+
+.index-content {
+	height: 430px;
+	background: url(img/bg-index.jpg) top center no-repeat;
+	width: 940px;
+	padding: 50px 80px;
+	box-sizing: border-box;
+	margin-bottom: 35px;
+}
+
+.index-content-left {
+	width: 380px;
+	float: left;
+}
+
+.index-content-right {
+	width: 300px;
+	float: right;
+}
+
+.index-content-left h2, .index-content-right h2 {
+	text-transform: uppercase;
+	font-size: 30px;
+	margin-bottom: 35px;
+}
+
+.index-content-left li {
+	list-style: none;
+	text-transform: uppercase;
+	margin-bottom: 35px;
+	line-height: 20px;
+
+}
+
+.index-content-left li time {
+	font-family: PT Sans;
+	font-size: 14px;
+	text-transform: capitalize;
+} 
+
+.btn {
+	background: #000;
+	font-family: PT Sans Bold;
+	text-transform: uppercase;
+	color: #FFF;
+	text-align: center;
+	padding: 15px 0;
+	display: block;
+	width: 140px;
+	float: left;
+	font-size: 14px;
+	cursor: pointer;
+}
+
+.gallery-prev {
+	margin-right: 20px;
+}
+
+
+figure {
+	background: #FFF;
+	padding: 7px;
+	margin-bottom: 35px;
+}
+
+.index-content-left.contacts p {
+	text-transform: uppercase;
+	margin-bottom: 35px;
+	font-size: 14px;
+}
+
+.drive {
+	margin-right: 20px;
+}
+
+.index-content-right p {
+	text-transform: uppercase;
+	font-size: 14px;
+	margin-bottom: 20px;
+}
+
+.index-content-right form {
+	width: 100%;
+}
+
+.index-content-right input[type="text"] {
+	width: 138px;
+	border: 2px solid #000;
+	box-sizing: border-box;
+	padding: 15px;
+	margin-bottom: 20px;
+	float: left;
+	background: #f9f6f3;
+}
+.index-content-right input[type="text"]:nth-child(2n+1) {
+	margin-right: 20px;
+}
+
+.index-content-right button[type="submit"] {
+	width: 100%;
+
+}
+
+footer {
+	background: #242424;
+	margin-top: 60px;
+	padding: 60px 0;
+	color: #FFF
+}
+.footer-social p, .footer-copyright p {
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+.footer-contacts {
+	width: 320px;
+	float: left;
+	margin-right: 60px;
+}
+
+.footer-contacts a {
+	color: #FFF
+}
+
+.footer-social {
+	width: 150px;
+	float: left;
+}
+
+.footer-copyright {
+	float: right;
+}
+
+.social-btn {
+	background: #000;
+	height: 44px;
+	width: 44px;
+	margin-right: 8px;
+	float: left;
+	display: block;
+	padding: 10px;
+	box-sizing: border-box;
+}
+.social-btn img {
+	display: block;
+	margin: 0 auto;
+}
+
+.social-btn-inst {
+	margin-right: 0;
+}
