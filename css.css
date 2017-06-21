@@ -13,7 +13,133 @@ body {
 	font-family: PT Sans Bold;
 }
 
+.inner-page {
+	background: #000 url(img/inner-bg.jpg);
+}
+.inner-page header {
+	margin-bottom: 55px
+}
 
+.inner-page p {
+	text-transform: uppercase;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.inner-page h1 {
+	text-transform: uppercase;
+}
+.breadcramb {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 60px
+}
+
+.breadcramb li {
+	list-style: none;
+	display: inline;
+	text-transform: uppercase;
+}
+
+.breadcramb li a {
+	padding-right: 40px;
+	color: #000;
+	position: relative;
+}
+
+.breadcramb li a::before {
+	content: "";
+	width: 10px;
+	height: 10px;
+	background: #000;
+	position: absolute;
+	right: 14px;
+	top: 5px;
+	transform: rotate(45deg);
+}
+
+.current {
+	color: #242424;
+	opacity: 0.6
+}
+
+.big-header {
+	text-align: center;
+	margin-bottom: 65px;
+}
+.big-header h2 {
+	display: inline;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 0;
+	font-size: 48px;
+	line-height: 48px;
+	padding: 0 25px;
+	position: relative;
+	z-index: 2;
+	background: url(img/inner-bg.jpg);
+}
+
+.big-header::after {
+	content: "";
+	position: relative;
+	border-top: 2px solid #000;
+	top: -25px;
+	display: block;
+	z-index: 1;
+}
+
+.price-table {
+	width: 100%;
+}
+
+.list-style-1 {
+	margin: 0;
+	padding: 0;
+}
+
+.list-style-1 li {
+	list-style: none;
+	padding-left: 20px;
+	position: relative;
+	text-transform: uppercase;
+	line-height: 27px;
+	margin-bottom: 15px;
+}
+
+.list-style-1 li::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	width: 10px;
+	height: 10px;
+	background: #000;
+	top: 8px;
+	transform: rotate(45deg);
+}
+
+.inner-content-left, .inner-content-rught {
+	width: 460px;
+}
+
+.inner-content-left {
+	float: left;
+}
+
+.inner-content-rught {
+	float: right;
+}
+
+.inner-content table {
+	border-collapse: collapse;
+}
+td {
+	border: 2px solid #000;
+	padding: 10px 15px;
+}
+.price-table td {
+	width: 50%;
+}
 img {
 	margin-bottom: -4px;
 }
@@ -40,6 +166,30 @@ header {
 	float: left;
 }
 
+.main-navigation .logo-inner {
+  float: left;
+  width: 111px;
+  height: 24px;
+  padding: 22px 20px 0;
+  display: inline-block;
+  vertical-align: top;
+  line-height: 20px;
+}
+.main-navigation .active::after {
+	content: "";
+	position: absolute;
+	background: #fff;
+	right: 20px;
+	left: 20px;
+	height: 5px;
+	bottom: 0;
+}
+.main-navigation .active span {
+	display: block;
+	padding: 25px 20px;
+	color: #FFF;
+	text-transform: uppercase;
+}
 ul {
 	margin: 0;
 }
@@ -47,7 +197,8 @@ ul {
 .main-navigation ul li {
 	display: inline-block;
 	vertical-align: top;
-	line-height: 20px
+	line-height: 20px;
+	position: relative;
 }
 
 .main-navigation ul li a {
@@ -216,6 +367,7 @@ ul {
 	float: left;
 	font-size: 14px;
 	cursor: pointer;
+	transition: .5s;
 }
 
 .btn:hover {
