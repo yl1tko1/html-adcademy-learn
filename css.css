@@ -13,10 +13,7 @@ body {
 	font-family: PT Sans Bold;
 }
 
-* {
-	padding: 0;
-	margin: 0;
-}
+
 img {
 	margin-bottom: -4px;
 }
@@ -37,7 +34,6 @@ img {
 }
 header {
 	background: #000;
-	padding: 25px 0;
 }
 .main-navigation {
 	width: 720px;
@@ -49,31 +45,64 @@ ul {
 }
 
 .main-navigation ul li {
-	list-style: none;
-	float: left;
+	display: inline-block;
+	vertical-align: top;
+	line-height: 20px
 }
 
 .main-navigation ul li a {
 	text-decoration: none;
 	text-transform: uppercase;
 	color: #FFF;
-	margin-right: 35px;
 	font-size: 16px;
 	font-family: PT Sans Bold;
+	padding: 25px 20px;
+	display: block;
+}
+
+.main-navigation ul li a:hover {
+	background: #242424;
 }
 
 .user-block {
 	width: 150px;
 	float: right;
+
+}
+
+.user-block a::before {
+  width: 18px;
+  height: 18px;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 28px;
+  left: 20px;
+  background: url(img/login-icon.png) top center no-repeat;
+  opacity: 0.3;
 }
 
 .user-block a {
 	text-decoration: none;
 	text-transform: uppercase;
 	color: #FFF;
-	margin-right: 35px;
 	font-size: 16px;
+	display: inline-block;
+	padding-left: 50px;
+	padding-right: 20px;
+	padding-top:25px;
+	padding-bottom: 25px;
 	font-family: PT Sans Bold;
+	position: relative;
+	vertical-align: top;
+	line-height: 20px;
+}
+
+.user-block a:hover {
+	background: #242424;
+}
+.user-block a:hover::before {
+	opacity: 1;
 }
 
 .logo {
@@ -95,6 +124,9 @@ ul {
 	color: #FFF;
 	text-align: center;
 	text-transform: uppercase;
+	line-height: 20px;
+	margin-bottom:-;
+	margin:10px;
 }
 .features-item:last-child {
 	margin-right: 0;
@@ -105,6 +137,22 @@ ul {
 	color: #FFF;
 	font-family: PT Sans Bold;
 	text-transform: uppercase;
+	display: block;
+	padding-bottom: 35px;
+	margin-bottom: 20px;
+	position: relative;
+}
+.features-name::before {
+	content: "";
+	width: 20px;
+	height: 20px;
+	display: block;
+	background: #fff;
+	bottom: 0;
+	left: 50%;
+	margin-left: -10px;
+	position: absolute;
+	transform: rotate(45deg);
 }
 
 .index-content {
@@ -119,6 +167,8 @@ ul {
 .index-content-left {
 	width: 380px;
 	float: left;
+	padding-right: 35px;
+	box-sizing: border-box;
 }
 
 .index-content-right {
@@ -129,15 +179,23 @@ ul {
 .index-content-left h2, .index-content-right h2 {
 	text-transform: uppercase;
 	font-size: 30px;
+	margin: 0;
 	margin-bottom: 35px;
+}
+
+.index-content-left ul {
+	padding:  0;
 }
 
 .index-content-left li {
 	list-style: none;
 	text-transform: uppercase;
 	margin-bottom: 35px;
-	line-height: 20px;
 
+}
+.index-content-left li p {
+	margin: 0;
+	line-height: 20px;
 }
 
 .index-content-left li time {
@@ -160,6 +218,9 @@ ul {
 	cursor: pointer;
 }
 
+.btn:hover {
+	background: #663d15;
+}
 .gallery-prev {
 	margin-right: 20px;
 }
@@ -168,13 +229,16 @@ ul {
 figure {
 	background: #FFF;
 	padding: 7px;
+	margin: 0;
 	margin-bottom: 35px;
+
 }
 
 .index-content-left.contacts p {
 	text-transform: uppercase;
 	margin-bottom: 35px;
 	font-size: 14px;
+	line-height: 21px;
 }
 
 .drive {
@@ -185,6 +249,7 @@ figure {
 	text-transform: uppercase;
 	font-size: 14px;
 	margin-bottom: 20px;
+
 }
 
 .index-content-right form {
@@ -199,6 +264,10 @@ figure {
 	margin-bottom: 20px;
 	float: left;
 	background: #f9f6f3;
+	text-transform: uppercase;
+	font-family: Open Sans;
+	font-weight: 700;
+	color: #000;
 }
 .index-content-right input[type="text"]:nth-child(2n+1) {
 	margin-right: 20px;
@@ -252,6 +321,10 @@ footer {
 .social-btn img {
 	display: block;
 	margin: 0 auto;
+}
+
+.social-btn-vk img {
+	margin: 5px auto;
 }
 
 .social-btn-inst {
