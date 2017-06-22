@@ -16,14 +16,14 @@
 					<li><a href="#">Главная</a></li>
 					<li><a href="#">Информация</a></li>
 					<li><a href="#">Новости</a></li>
-					<li><a href="#">Прайс-лист</a></li>
+					<li><a href="item.html">Прайс-лист</a></li>
 					<li><a href="#">Магазин</a></li>
 					<li><a href="#">Контакты</a></li>
 				</ul>
 			</nav>
 
 			<div class="user-block">
-					<a  href="">Вход</a>
+					<a  href="#">Вход</a>
 			</div>
 
 		</div>
@@ -131,5 +131,24 @@
 			</section>
 		</div>
 	</footer>
+
+	<div class="modal-content">
+		<b class="modal-content-title">ЛИЧНЫЙ КАБИНЕТ</b>
+		<p>ВВедите пожалуйста свой логин и пароль</p>
+		<form action="">
+			<input class="login-name" type="text" name="login">
+			<input class="login-password" type="text" name="password">
+			<input type="checkbox" id="save-me">
+			<label for="save-me">
+			Запомните меня
+			<span class="checked"></span>
+			</label>
+			<a class="a-fix resset-password" href="">Я забыл пароль</a>
+			<button class="btn a-fix" type="submit">Войти</button>
+		</form>
+		<button class="a-fix modal-content-close" title="Закрыть"></button>
+	</div>
+
+	<script src="script.js"></script>
 </body>
 </html>

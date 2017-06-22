@@ -482,3 +482,142 @@ footer {
 .social-btn-inst {
 	margin-right: 0;
 }
+
+.modal-content {
+	position: absolute;
+	width: 300px;
+	padding: 50px 80px;
+	top: 120px;
+	left: 50%;
+	margin-left: -230px;
+	display: none;
+	color: #000;
+
+	background: url(img/inner-bg.jpg);
+}
+
+.modal-active {
+	display: block;
+}
+
+.modal-content-close {
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	top: 10px;
+	right: -35px;
+	background: transparent;
+	padding: 0;
+	cursor: pointer;
+	outline: none;
+}
+
+.modal-content-close:hover {
+	background: transparent;
+}
+
+.modal-content-close::before, .modal-content-close::after {
+  content: "";
+  width: 20px;
+  border-bottom: 4px solid #d1d1d1;
+  position: absolute;
+  top: 11px;
+  left: 3px;
+  display: block;
+}
+
+.modal-content-close::before {
+	transform: rotate(45deg);
+}
+
+.modal-content-close::after {
+	transform: rotate(-45deg);
+}
+
+.modal-content p {
+	text-transform: uppercase;
+	margin-bottom: 15px;
+}
+.modal-content-title {
+	font-size: 30px;
+	margin-bottom: 30px
+}
+
+.modal-content form input[type="text"] {
+	width: 300px;
+	box-sizing: border-box;
+	border: 2px solid #000;
+	text-transform: uppercase;
+	padding: 15px 35px 15px 15px;
+	font-weight: 700;
+	outline: none;
+}
+
+.modal-content form button[type="submit"] {
+	width: 300px;
+	outline: none;
+}
+
+.modal-content form input[type="text"]:first-child {
+	margin-bottom: 10px;
+}
+.login-name {
+  background: #f9f6f3 url(img/login-name.png) no-repeat;
+  background-position: 96% 17px;
+  background-size: 15px;
+}
+
+.login-password {
+  background: #f9f6f3 url(img/login-password.png) no-repeat;
+  background-position: 96% 17px;
+  background-size: 15px;
+}
+
+.resset-password {
+	color: #000;
+	display: inline;
+	float: right;
+	margin: 15px 0;
+	text-transform: uppercase;
+	text-decoration: underline;
+}
+.modal-content form input[type="checkbox"] {
+	margin: 15px 0;
+	margin-right: 10px;
+}
+.modal-content form input[type="checkbox"] + label {
+	display: inline;
+	text-transform: uppercase;
+	position: relative;
+
+}
+
+.modal-content form input[type="checkbox"] + label::before {
+  content: "";
+  position: absolute;
+  background: #f9f6f3;
+  height: 15px;
+  width: 15px;
+  display: block;
+  top: 0;
+  border: 2px solid #000;
+}
+
+.modal-content form input[type="checkbox"]:checked + label .checked::before,
+.modal-content form input[type="checkbox"]:checked + label .checked::after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    display: block;
+    top: 8px;
+    border-top: 3px solid #000;
+    left: -24px;
+}
+
+.modal-content form input[type="checkbox"]:checked + label .checked::before {
+	transform: rotate(45deg);
+}
+
+.modal-content form input[type="checkbox"]:checked + label .checked::after {
+	transform: rotate(-45deg);
+}
